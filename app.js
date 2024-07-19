@@ -82,7 +82,7 @@ Complete Exercise 2 in the space below:
 // Complete Exercise 6 in the space below:
 // */
 
-// const foods = ['pizza', 'cheeseburger'];
+// // const foods = ['pizza', 'cheeseburger'];
 // foods.shift ('pizza');
 // foods.unshift ('sushi', 'cupcake');
 
@@ -101,12 +101,15 @@ Complete Exercise 2 in the space below:
 // */
 
 // const foods = ['pizza', 'cheeseburger'];
-
+//     foods.unshift ('tofu');
+//     foods[0] = 'pizza';
+//     foods[1] = 'tofu'
 //     foods.shift ('pizza');
 //     foods.unshift ('sushi', 'cupcake');
-//     foods.slice() = ('yummy');
-// const yummy = foods
+//     const yummy = foods.slice (0, 2)
+
 // console.log(yummy);
+// console.log(foods)
 
 
 // /*
@@ -118,12 +121,22 @@ Complete Exercise 2 in the space below:
 // 2) Assign it to a variable named `soyIdx`.
 
 // Complete Exercise 8 in the space below:
-// */
 
 
 
-// console.log('Exercise 8 result:', soyIdx);
 
+// const foods = ['pizza', 'cheeseburger'];
+//     foods.unshift ('tofu');
+//     foods[0] = 'pizza';
+//     foods[1] = 'tofu'
+//     foods.shift ('pizza');
+//     foods.unshift ('sushi', 'cupcake');
+//     const yummy = foods.slice (0, 2)
+//     const soyIdx = foods.indexOf('tofu')
+
+
+// console.log(soyIdx);
+// console.log(foods)
 
 
 // /*
@@ -141,8 +154,18 @@ Complete Exercise 2 in the space below:
 // */
 
 
+// const foods = ['pizza', 'cheeseburger'];
+//     foods.unshift ('tofu');
+//     foods[0] = 'pizza';
+//     foods[1] = 'tofu'
+//     foods.shift ('pizza');
+//     foods.unshift ('sushi', 'cupcake');
+//     const yummy = foods.slice (0, 2)
+//     const soyIdx = foods.indexOf('tofu')
 
-// console.log('Exercise 9 result:', allFoods);
+//    let allFoods = foods.join('->' )
+
+// console.log(allFoods);
 
 
 
@@ -157,9 +180,19 @@ Complete Exercise 2 in the space below:
 // Complete Exercise 10 in the space below:
 // */
 
+// const foods = ['pizza', 'cheeseburger'];
+//     foods.unshift ('tofu');
+//     foods[0] = 'pizza';
+//     foods[1] = 'tofu'
+//     foods.shift ('pizza');
+//     foods.unshift ('sushi', 'cupcake');
+//     const yummy = foods.slice (0, 2)
+//     const soyIdx = foods.indexOf('tofu')
+//     let allFoods = foods.join('->')
+//     let hasSoup = foods.includes('soup')
 
 
-// console.log('Exercise 10 result:', hasSoup);
+// console.log(hasSoup);
 
 
 
@@ -175,11 +208,15 @@ Complete Exercise 2 in the space below:
 // Complete Exercise 11 in the space below:
 // */
 
-// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+
+const odds = nums.filter((num) => num % 2 === 1 )
+
+// console.log(odds)
 
 
 
-// console.log('Exercise 11 result:', odds);
+
 
 
 
@@ -203,9 +240,14 @@ Complete Exercise 2 in the space below:
 // */
 
 
+// let fizz = nums.filter((num) => num % 3 === 0 )
 
-// console.log('Exercise 12 Results:');
-// console.log('  fizz:', fizz);
+// let buzz =  nums.filter((num) => num % 5 === 0 )
+
+// let fizzbuzz =  nums.filter((num) => num % 3 === 0 & num % 5 === 0 )
+
+
+// console.log(fizz);
 // console.log('  buzz:', buzz);
 // console.log('  fizzbuzz:', fizzbuzz);
 
@@ -222,14 +264,17 @@ Complete Exercise 2 in the space below:
 // Complete Exercise 13 in the space below:
 // */
 
-// const numArrays = [
-// 	[100, 5, 23],
-// 	[15, 21, 72, 9],
-// 	[45, 66],
-// 	[7, 81, 90]
-// ];
+const numArrays = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
 
-// console.log('Exercise 13 result:', numList);
+// let numList = numArrays[numArrays.length - 1]
+
+
+// console.log(numList);
 
 
 // /*
@@ -243,9 +288,11 @@ Complete Exercise 2 in the space below:
 // Complete Exercise 14 in the space below:
 // */
 
+// let num = numArrays[2][1]
 
 
-// console.log('Exercise 14 result:', num);
+
+// console.log(num);
 
 
 
@@ -262,6 +309,10 @@ Complete Exercise 2 in the space below:
 // Complete Exercise 15 in the space below:
 // */
 
+// sum = 0
+// let total = numArrays.forEach(num => {
+//     sum += num;
+// })
 
 
-// console.log('Exercise 15 result:\n', total);
+// console.log(total);
